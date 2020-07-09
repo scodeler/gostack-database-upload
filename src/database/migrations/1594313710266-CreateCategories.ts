@@ -24,7 +24,7 @@ export default class CreateCategories1594313710266
             default: 'now()',
           },
           {
-            name: 'updated_ats',
+            name: 'updated_at',
             type: 'timestamp',
             default: 'now()',
           },
@@ -34,6 +34,6 @@ export default class CreateCategories1594313710266
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
-    await queryRunner.dropTable('transactions');
+    await queryRunner.dropTable('categories');
   }
 }
